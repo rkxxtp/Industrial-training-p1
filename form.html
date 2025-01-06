@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <a href="index.html"><li class="list">Home</li></a>
+                <a href="about.html"><li class="list">About</li></a>
+                <li class="list">Download</li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <h1>Contact us</h1>
+    <form method="POST" action="./form.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br> -->
+        
+        <label for="dob">DOB:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <label>Gender: </label><br>
+        <select name="Gender" >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p class="copyright">&copy </p>
+        <p>All Rights Reserved</p>
+    </footer>
+     
+</body>
+</html>
