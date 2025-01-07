@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navbar Styles */
+
 .navbar,
 nav {
     background-color: #333;
@@ -36,7 +36,7 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Home Page Styles */
+
 .content {
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ header {
     line-height: 1.6;
 }
 
-/* Form Page Styles */
+
 form {
     background-color: #fff;
     width: 300px;
@@ -142,7 +142,7 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #333;
     color: white;
@@ -164,7 +164,7 @@ footer {
     align-items: center;
 }
 
-/* Navigation Hover Effects */
+
 nav ul li {
     padding-left: 18px;
     padding-right: 9px;
