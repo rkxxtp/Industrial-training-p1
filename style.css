@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +7,36 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-.navbar {
+/* Navbar Styles */
+.navbar,
+nav {
     background-color: #333;
     padding: 10px 0;
 }
 
-.navbar ul {
+.navbar ul,
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
-.navbar li {
+.navbar li,
+nav ul li {
     margin: 0 20px;
 }
 
-.navbar a {
+.navbar a,
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
+/* Home Page Styles */
 .content {
     display: flex;
     justify-content: center;
@@ -54,27 +62,155 @@ body {
     font-size: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
-.footer {
+/* About Page Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Form Page Styles */
+form {
+    background-color: #fff;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-
-.hehe{
+.hehe {
     font-size: 5em;
 }
 
-.hello{
+.hello {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Navigation Hover Effects */
+nav ul li {
+    padding-left: 18px;
+    padding-right: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -6px;
+    width: 90%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+nav ul li:hover::after {
+    transition: transform .2s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.list:hover {
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px dotted #8a8585;
+}
+
+.copyright {
+    margin-right: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
 }
